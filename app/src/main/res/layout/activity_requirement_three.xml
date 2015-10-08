@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#074286"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:id="@+id/requirement_three_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logotext_back"
+          />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much experience"
+            android:textColor="#074286"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="are you looking for"
+            android:textColor="#074286"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in the service"
+            android:textColor="#074286"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="provider?"
+            android:textColor="#074286"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+
+        >
+        <Spinner
+            android:id="@+id/req_three_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dropdown_bg"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

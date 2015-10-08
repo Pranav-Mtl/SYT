@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.syt.balram.syt.UserFollowers">
+
+    <LinearLayout
+        android:id="@+id/user_setting_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <ImageButton
+            android:id="@+id/follower_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_below="@id/user_setting_header"
+        >
+    <LinearLayout
+        android:id="@+id/follower_text"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can send discounts and deals to your followers.
+Your Ad will go as a push notification."
+            android:textColor="@color/sytcolortext"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/follower_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            />
+        <ListView
+            android:id="@+id/my_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cacheColorHint="#00000000"
+            android:divider="#e4e4e4"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+             >
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/follow_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+
+        >
+        <EditText
+            android:id="@+id/follower_editText_message"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:singleLine="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="#f2f2f2"
+            android:hint="Eg.Hi! I am a Yoga teacher registered on SellYourTime.Since you follow my profile,here’s a deal for you.
+50% discount on Yoga classes starting 1st Jan.
+Chat or Call now."
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/follow_send_btn"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_selector"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syt.balram.syt.SubCategoryActivity">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/subcategory_main"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/sytcolor"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/seller_subcategory2_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/logotext_back"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/subcategory_main2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fc651c"
+        android:gravity="center"
+        android:layout_below="@id/subcategory_main"
+        >
+        <TextView
+            android:id="@+id/seller_subcategoryTitlenew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="sss"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/seller_subcategory_listview"
+        android:layout_below="@id/subcategory_main2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_view_selector"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true"
+        android:divider="#1e1e1e"
+        android:dividerHeight=".3dp"
+        android:footerDividersEnabled="true"
+        android:gravity="center"
+        android:numColumns="auto_fit" >
+    </ListView>
+
+
+</RelativeLayout>

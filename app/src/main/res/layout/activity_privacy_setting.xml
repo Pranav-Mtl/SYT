@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#074286"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:id="@+id/privacy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+           android:layout_marginLeft="10dp"
+
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do you wish to be notified by a buyer for your service?"
+                android:textSize="15dp"
+                android:textColor="#074286"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="5dp" >
+
+
+                <RadioButton
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="When a buyer for your service tries to contact you,would you like to share your phone number and email id or only email?"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#074286"
+
+                    />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number and Email-ID."
+                    android:textSize="15dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Email-ID."
+                    android:textSize="15dp"
+
+                    android:textColor="#000000"
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* We suggest sharing both as it increases chances of getting hired * "
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#074286"
+                />
+            <Button
+                android:id="@+id/btn_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/customized_button"
+                android:text="Save "
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.syt.balram.syt.RequirementTwo">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/requirement_one_main"
+        android:background="#074286"
+        >
+        <ImageButton
+            android:id="@+id/requirement_two_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logotext_back"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/requirement_one_main"
+        android:weightSum="10"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:id="@+id/requirement_one_second"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When do you need this service?"
+            android:textColor="#074286"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#074286"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/requirement_two_line"
+        android:layout_width="match_parent"
+        android:layout_below="@id/requirement_one_second"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        />
+
+    <ListView
+        android:layout_below="@id/requirement_two_line"
+        android:id="@+id/requirement_two_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:divider="#e4e4e4"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:gravity="center"
+        android:numColumns="auto_fit" >
+    </ListView>
+  <!--  <TextView
+        android:layout_below="@id/requirement_two_listview"
+        android:id="@+id/requirement_two_lines"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        />-->
+        <TextView
+            android:id="@+id/requirement_two_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="sss"
+            android:textColor="#7C0000"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/sytcolor"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Select"
+            android:textColor="@color/sytcolor"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="3.5"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+    <Button
+        android:id="@+id/requirement_two_start_date"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:hint="Start date"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "/>
+    <Button
+        android:id="@+id/requirement_two_end_date"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:hint="End date"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"        />
+
+</LinearLayout>
+        <Button
+            android:id="@+id/requirement_two_next"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_btn"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

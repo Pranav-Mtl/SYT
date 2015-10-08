@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.syt.balram.syt.UserProfile">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@drawable/side_setting"
+        android:orderInCategory="100" app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/editProfile"
+                app:showAsAction="never"
+                android:title="Edit Profile"/>
+            <item
+                android:id="@+id/addServices"
+                app:showAsAction="never"
+                android:title="Add Services"/>
+            <item
+                android:id="@+id/buildFollowers"
+                app:showAsAction="never"
+                android:title="Build Followers"/>
+            <item
+                android:id="@+id/publishAds"
+                app:showAsAction="never"
+                android:title="Publish Ads"/>
+            <item
+                android:id="@+id/accounSetting"
+                app:showAsAction="never"
+                android:title="Account Settings"/>
+
+
+        </menu>
+
+        </item>
+
+
+</menu>

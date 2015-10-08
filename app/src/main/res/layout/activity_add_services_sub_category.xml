@@ -1,0 +1,70 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syt.balram.syt.SubCategoryActivity">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/subaddcategory_main"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/sytcolor"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/seller_addsubcategory2_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/logotext_back"
+            />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e4e4e4"
+    android:layout_below="@id/subaddcategory_main"
+    android:id="@+id/subcategory_popup"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fc651c"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/subcategoryTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Select SubCategory"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:background="#fc651c"
+            android:textColor="#ffffff"
+
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/subcategory_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_view_selector"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true"
+        android:divider="#1e1e1e"
+        android:dividerHeight=".3dp"
+        android:footerDividersEnabled="true"
+        android:gravity="center"
+        android:numColumns="auto_fit" >
+    </ListView>
+</LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+                      />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/sytcolor"
+            android:text="What services do you need?"
+            />
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I wish to"
+            android:textSize="18dp"
+            android:textColor="@color/sytcolortext"
+
+            />
+        <Spinner
+            android:id="@+id/search_looking_spn"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/dropdown_bg"
+            android:hint="Sell a service"
+            android:paddingLeft="10dp"
+
+            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/sytcolortext"
+            />
+        <Spinner
+            android:id="@+id/search_category_spn"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/dropdown_bg"
+            android:hint="Trainers and Tutors"
+            android:paddingLeft="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select  Subcategory"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/sytcolortext"
+            />
+        <Spinner
+            android:id="@+id/search_sub_category_spn"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/dropdown_bg"
+            android:hint="Trainers and Tutors"
+            android:paddingLeft="10dp"
+            />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location / Address"
+            android:textSize="18dp"
+            android:textColor="@color/sytcolortext"
+            />
+        <AutoCompleteTextView
+            android:id="@+id/search_location"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/buyer_question_tv"
+            android:hint="Vasant Kunj/110081"
+            android:paddingLeft="10dp"
+            />
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/customized_button"
+            android:text="Search"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

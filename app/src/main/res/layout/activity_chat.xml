@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.syt.balram.syt.ChatActivity">
+    <LinearLayout
+        android:id="@+id/chat_header"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@color/sytcolor"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/chat_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_new"
+            />
+        <ImageView
+            android:id="@+id/chat_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_avatar_man"
+            />
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="Pranav Mittal"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_listView"
+        android:layout_below="@id/chat_header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout1"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/chat_editText_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:hint="Enter your message"
+            android:singleLine="false"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/chat_send"
+            android:layout_width="30dp"
+             android:layout_height="30dp"
+            android:background="@drawable/chat_send"
+            android:onClick="onClick"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

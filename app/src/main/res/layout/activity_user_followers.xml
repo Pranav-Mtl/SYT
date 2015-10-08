@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.syt.balram.syt.UserFollowers">
+
+    <LinearLayout
+        android:id="@+id/user_setting_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <ImageButton
+            android:id="@+id/user_followers_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/follower_text"
+        android:layout_below="@id/user_setting_header"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can send message to your followers"
+            android:textColor="@color/sytcolortext"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/follower_text"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <ListView
+            android:id="@+id/follower_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cacheColorHint="#00000000"
+            android:divider="#e4e4e4"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+            android:gravity="center"
+            android:numColumns="auto_fit" >
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/follow_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#f2f2f2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:id="@+id/follower_editText_message"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="false"
+            android:layout_alignParentLeft="true"
+            android:hint="Text your message"
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/follow_send_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_selector"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

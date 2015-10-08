@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.syt.balram.syt.ManageCategory">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:id="@+id/manage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+       android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:background="#696969"
+            >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4.7"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="You can edit, update the registered services."
+            />
+        <ImageButton
+            android:id="@+id/manage_btn_edit"
+            android:layout_gravity="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit"
+            />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub-Category"
+            android:layout_marginTop="20dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+         <Spinner
+            android:id="@+id/manage_subcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dropdown_bg"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:textSize="22sp"
+            android:layout_marginTop="25dp"
+
+            android:textColor="@color/sytcolortext"
+            />
+        <Spinner
+            android:id="@+id/manage_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dropdown_bg"
+            ></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Details"
+            android:layout_marginTop="25dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+        <EditText
+            android:id="@+id/manage_details"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:background="@drawable/description_bg"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Location"
+            android:layout_marginTop="25dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            >
+        <CheckBox
+            android:id="@+id/manage_clientside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+             android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="I will travel to Client Side"/>
+
+        <CheckBox
+            android:id="@+id/manage_myplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="At my place"/>
+        <CheckBox
+            android:id="@+id/manage_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="17sp"
+            android:text="Online"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability"
+            android:layout_marginTop="25dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+        <Spinner
+            android:id="@+id/manage_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dropdown_bg"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charge Mode"
+            android:layout_marginTop="25dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+        <Spinner
+            android:id="@+id/manage_charge_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buyer_question_tv"
+            ></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Price (Rs.)"
+            android:layout_marginTop="25dp"
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+
+            <EditText
+                android:id="@+id/manage_minprice"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/buyer_question_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Price (Rs.)"
+            android:layout_marginTop="25dp"
+
+            android:textSize="22sp"
+            android:textColor="@color/sytcolortext"
+            />
+
+        <EditText
+            android:id="@+id/manage_price"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:inputType="number"
+            android:background="@drawable/buyer_question_tv" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+              android:id="@+id/manage_btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customized_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+        <Button
+            android:id="@+id/manage_btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customized_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Update Profile"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

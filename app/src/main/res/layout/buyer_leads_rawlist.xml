@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/buyer_leads"
+    android:elevation="4dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/buy_leads_name"
+       android:layout_width="wrap_content"
+       android:textColor="#000000"
+       android:textSize="20sp"
+       android:text="xxxxxxxx"
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center_vertical"
+       android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/buy_leads_summary"
+        android:layout_width="wrap_content"
+        android:text="sssss"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/buy_leads_read"
+        android:layout_width="wrap_content"
+        android:text="View profile..."
+        android:textColor="#08a810"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

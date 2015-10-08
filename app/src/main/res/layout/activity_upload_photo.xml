@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.syt.balram.syt.UploadPhoto">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:id="@+id/upload_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            android:layout_marginLeft="10dp"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/upload_bg"
+        >
+
+    <ImageView
+        android:id="@+id/upload_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/upload_load_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="Upload"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ffffff"
+        android:onClick="uploadImage"
+        android:visibility="gone"
+        />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="Upload from gallery"
+        android:background="@drawable/custom_btn"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="loadImagefromGallery"
+        />
+
+    <Button
+        android:id="@+id/upload_camera"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="Take from camera"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/custom_btn"
+        />
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

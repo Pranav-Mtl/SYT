@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rating_popup"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/rating_bar_pop"
+    >
+  <!--  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this seller"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Rating"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        />
+    <RatingBar
+        android:id="@+id/rating_popup_current_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:isIndicator="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this seller"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        />
+    <RatingBar
+        android:id="@+id/rating_popup_user_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:maxWidth="110dp"
+        android:maxHeight="100dp"
+        android:isIndicator="false"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+    <Button
+        android:id="@+id/rating_popup_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:background="@drawable/rating_bar_button"
+        />
+            <Button
+                android:id="@+id/rating_popup_button_later"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not now"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@drawable/rating_bar_button"
+                />
+            </LinearLayout>
+</LinearLayout>
+</LinearLayout>

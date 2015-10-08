@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e4e4e4"
+    tools:context="com.syt.balram.syt.CategoryTrainerTutor">
+
+    <LinearLayout
+        android:id="@+id/category_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+
+        >
+        <ImageButton
+            android:id="@+id/category_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_below="@id/category_header"
+    android:id="@+id/category_img"
+    android:layout_width="fill_parent"
+    android:background="@drawable/category_default"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+    />
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_below="@id/category_img"
+    android:id="@+id/subcategory_text"
+    android:layout_width="fill_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#696969"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/category_subcategory_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Sub-Category"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp"
+        android:background="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/category_arrow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/right_arrow"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/subcategory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ListView
+
+            android:id="@+id/category_trainer_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:divider="#e4e4e4"
+            android:clickable="true"
+            android:dividerHeight="10dp"
+            android:footerDividersEnabled="true"
+            android:gravity="center"
+            android:numColumns="auto_fit" >
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/category_filter"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/category_filter"
+            />
+        </RelativeLayout>
+
+</RelativeLayout>

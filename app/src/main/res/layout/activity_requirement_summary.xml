@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.syt.balram.syt.RequirementSummary">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/requirement_summary"
+        android:background="#074286"
+        >
+        <ImageButton
+            android:id="@+id/summary_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logotext_back"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/sytcolortext"
+        android:text="Requirement Summary"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/sytcolortext"
+        android:text="(Edit your details)"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/summary_bgg"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:orientation="horizontal"
+     >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Looking for:"
+                android:textColor="@color/sytcolortext"
+                android:textSize="16sp"
+                />
+            <EditText
+                android:background="@android:color/transparent"
+                android:id="@+id/summary_subcategory"
+                android:layout_width="fill_parent"
+                android:textSize="14sp"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0sp"
+        android:orientation="horizontal"
+        >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Experience:"
+         android:textSize="16sp"
+         android:textColor="@color/sytcolor"
+         />
+     <EditText
+         android:background="@android:color/transparent"
+         android:id="@+id/summary_exp"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:textSize="14sp"
+         android:editable="false"
+         android:focusable="false"
+         android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0sp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Required on:"
+            android:textSize="16sp"
+            android:textColor="@color/sytcolor"
+            />
+     <EditText
+         android:id="@+id/summary_days"
+         android:layout_width="wrap_content"
+         android:textSize="14sp"
+         android:background="@android:color/transparent"
+         android:layout_marginLeft="5dp"
+         android:editable="false"
+         android:focusable="false"
+         android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0sp"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery location:"
+
+            android:textSize="16sp"
+            android:textColor="@color/sytcolor"
+            />
+        <EditText
+            android:background="@android:color/transparent"
+            android:id="@+id/summary_location"
+            android:layout_width="fill_parent"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/summary_bgg"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/sytcolortext"
+            android:textSize="16sp"
+            android:text="Give detail description of your requirement"
+            />
+        <EditText
+            android:id="@+id/summary_title"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:paddingLeft="3dp"
+            android:hint="(eg:- Guitar trainer required in greater kailash, delhi)"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buyer_question_tv"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/summary_bgg"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/sytcolortext"
+            android:textSize="16sp"
+            android:text="Requirement title"
+            />
+        <EditText
+            android:id="@+id/summary_desciption"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:paddingLeft="3dp"
+
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buyer_question_tv"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/summary_bgg"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I will Pay (Rs.)"
+            android:textSize="16sp"
+            android:textColor="@color/sytcolortext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/summary_price_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            >
+            <EditText
+                android:id="@+id/summary_minprice"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:hint="Min Price"
+                android:paddingLeft="3dp"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:background="@drawable/seller_exp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/summary_maxprice"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:paddingLeft="3dp"
+                android:inputType="number"
+                android:hint="Max Price"
+                android:background="@drawable/seller_exp"
+                />
+
+            </LinearLayout>
+        <EditText
+            android:id="@+id/summary_fixPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:paddingLeft="3dp"
+            android:inputType="number"
+            android:hint="Fixed Price"
+            android:visibility="gone"
+            android:background="@drawable/buyer_question_tv"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:id="@+id/summary_not_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Now"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/customized_button"
+                />
+
+    <Button
+        android:id="@+id/summary_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Requirement"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/customized_button"
+        />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

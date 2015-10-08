@@ -1,0 +1,434 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.syt.balram.syt.BuyerProfile">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="#074286"
+        >
+    <ImageButton
+        android:id="@+id/seller_profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_new"
+        android:layout_gravity="center"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Requirement"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:paddingTop="5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/buyer_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:id="@+id/buyer_profile_posteddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#66ADFF"
+
+                />
+            <TextView
+                android:id="@+id/buyer_profile_postedname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#66ADFF"
+
+                />
+            <TextView
+                android:id="@+id/buyer_profile_posteddlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#66ADFF"
+
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/buyer_profile_desc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"
+                />
+            <ImageButton
+                android:id="@+id/buyer_profile_add"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add"/>
+            <TextView
+                android:id="@+id/buyer_profile_desc"
+                android:layout_below="@id/buyer_profile_desc_text"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_category"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+               android:layout_alignParentRight="true"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sub Category"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_subcategory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_experience"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Required On"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_availability"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Delivery Location"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_delivery_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Charge Mode"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_delivery_mode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="#F5F5F5"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Charges"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/buyer_profile_delivery_charges"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:textColor="@color/sytcolortext"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buyer_profile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="Contact this buyer"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                android:background="@drawable/customized_button"/>
+            <Button
+                android:id="@+id/buyer_profile_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="Delete Post"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingRight="20dp"
+                android:background="@drawable/customized_button"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

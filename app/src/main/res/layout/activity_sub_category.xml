@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syt.balram.syt.SubCategory">
+
+    <LinearLayout
+        android:id="@+id/category_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+
+        >
+        <ImageButton
+            android:id="@+id/category_back"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/category_header"
+        android:id="@+id/category_img"
+
+        android:layout_width="fill_parent"
+        android:background="@drawable/trainer_tutor"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainer and Tutor"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/category_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dp"
+        >
+
+        <ListView
+            android:id="@+id/subcategory_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#000000"
+            android:choiceMode="singleChoice"
+            android:divider="#e4e4e4"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+            android:gravity="center"
+            android:numColumns="auto_fit" >
+        </ListView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

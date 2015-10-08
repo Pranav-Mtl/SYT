@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#ffffff"
+    tools:context="com.syt.balram.syt.SellerQuestionThree">
+
+    <RelativeLayout
+        android:id="@+id/sellerHeader3"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#074286"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/seller_question_three_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/sellerHeader3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="9"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:text="Exp.(in years)"
+            android:textColor="@color/sytcolortext"
+            android:textSize="16sp"
+            />
+        <Spinner
+            android:id="@+id/spinnerExperience"
+            android:layout_width="96dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="43dp"
+            android:background="@drawable/seller_exp"
+            ></Spinner>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Describe your experience detail. "
+            android:textColor="@color/sytcolortext"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:id="@+id/seller_description"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:hint="Example: I am a business consultant in the area of foreign trade and company setup. I am an MBA graduated from xyz college and completed my engineering from xyz college.I have 10 years of experience helping small and medium business owners set up a company and get all related licenses"
+            android:background="#e4e4e4"
+            android:layout_marginRight="20dp"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I would like to: "
+                android:textColor="@color/sytcolortext"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+        <CheckBox
+            android:id="@+id/checkbox_clientside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel to client side"
+
+            />
+
+                <EditText
+                    android:id="@+id/seller_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    android:background="@drawable/seller_exp"
+                    android:hint="Distance(KM)"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkbox_myplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At my place"
+                android:checked="true"
+                />
+            <CheckBox
+                android:id="@+id/checkbox_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/seller_btn3"
+            android:layout_width="143dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/customized_button"
+            android:text="Next"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.syt.balram.syt.FollowerGcmMessage">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:background="@color/sytcolor"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/follower_gcm_message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logotext_back"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+        <TextView
+            android:id="@+id/follower_gcm_message"
+            android:text="jjj" android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/sytcolortext"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/follower_gcm_message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to APP"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/customized_button"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

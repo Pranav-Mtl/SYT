@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/sytcolor</item>
+        <item name="colorPrimaryDark">@color/sytcolor</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstar</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="btn_stand" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/drawable_list_selector</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="applicationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:dropDownListViewStyle">@style/spinner_style</item>
+    </style>
+
+    <style name="TransparentProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyCustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ThemeSpinnerDrop" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:dropDownListViewStyle">@style/spinner_style</item>
+    </style>
+
+    <style name="spinner_style" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">#000000</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerHeight">.3dp</item>
+
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+
+
+    </style>
+
+    <style name="MyActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="logo">@drawable/logo_new</item>
+        <item name="displayOptions">useLogo|showHome</item>
+    </style>
+
+    <style name="foodRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_star</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/sytcolor</item>
+        <item name="android:bottomDark">@color/sytcolor</item>
+        <item name="android:bottomMedium">@color/sytcolor</item>
+        <item name="android:centerBright">@color/sytcolor</item>
+        <item name="android:centerDark">@color/sytcolor</item>
+        <item name="android:centerMedium">@color/sytcolor</item>
+        <item name="android:fullBright">@color/sytcolor</item>
+        <item name="android:fullDark">@color/sytcolor</item>
+        <item name="android:topBright">@color/sytcolor</item>
+        <item name="android:topDark">@color/sytcolor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#074286"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <ImageButton
+            android:id="@+id/requirement_four_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sytcolortext"
+            android:text="Where do you need"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sytcolortext"
+            android:text="this service?"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="214dp"
+
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="I will travel to service the provider"
+            android:textSize="20dp"
+            android:id="@+id/requirementfour_firstCheckbox"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
+        <CheckBox
+            android:id="@+id/requirementfour_secondCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:text="At my place"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
+        <CheckBox
+            android:id="@+id/requirementfour_thirdCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Online"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

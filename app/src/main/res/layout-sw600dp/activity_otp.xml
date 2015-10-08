@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/sytcolor"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <ImageButton
+            android:id="@+id/otp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Please Enter OTP"
+            android:textSize="35dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/sytcolor"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="( We have sent OTP at your email-id and phone no. )"
+            android:textSize="22dp"
+            android:textColor="@color/sytcolor"
+            android:layout_marginLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/otp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:imeOptions="actionGo"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="4"
+            android:background="@drawable/buyer_question_tv"
+           android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+
+            />
+        <Button
+            android:id="@+id/otp_btn"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/customized_button"
+            android:layout_gravity="center"
+            android:text="Finish"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

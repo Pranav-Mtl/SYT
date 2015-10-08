@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syt.balram.syt.WebView">
+    <LinearLayout
+        android:id="@+id/webview_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sytcolor"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        >
+        <ImageButton
+            android:id="@+id/general_message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logotext_back"
+            android:layout_gravity="center_vertical"
+
+            />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_below="@id/webview_header"
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</RelativeLayout>

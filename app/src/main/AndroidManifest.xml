@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.syt.balram.syt" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.syt.balram.syt.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!--
+            <meta-data
+            android:name="af_TrackerURL"
+            android:value="@string/Affle_TRACKER_URL" />
+        -->
+        <meta-data
+            android:name="af_SessionTimeOut"
+            android:value="3600" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".LandingScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="sellyourtime" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterScreen"
+            android:label="@string/title_activity_register_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".LoginScreen"
+            android:label="@string/title_activity_login_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".HowItWork"
+            android:label="@string/title_activity_how_it_work"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BuyerQuestionFirst"
+            android:label="@string/title_activity_buyer_question_first"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".BuyerQuestionSecond"
+            android:label="@string/title_activity_buyer_question_second"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".Filter"
+            android:label="@string/title_activity_filter"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementOne"
+            android:label="@string/title_activity_requirement_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementTwo"
+            android:label="@string/title_activity_requirement_two"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+       <!-- <receiver
+            android:name="com.syt.balram.syt.InstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>-->
+
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerQuestionOne"
+            android:label="@string/title_activity_seller_question_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerQuestionExpandable"
+            android:label="@string/title_activity_seller_question_expandable"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerQuestionThree"
+            android:label="@string/title_activity_seller_question_three"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerQuestionFour"
+            android:label="@string/title_activity_seller_question_four"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerQuestionFive"
+            android:label="@string/title_activity_seller_question_five"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".OTPActivity"
+            android:label="@string/title_activity_otp"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".Contact"
+            android:label="@string/title_activity_contact"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".NewPassword"
+            android:label="@string/title_activity_new_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+        <!--
+        <activity
+            android:name=".JsonParseSample"
+            android:label="@string/title_activity_json_parse_sample" >
+        </activity>
+        -->
+
+        <activity
+            android:name=".RequirementFive"
+            android:label="@string/title_activity_requirement_five"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementSix"
+            android:label="@string/title_activity_requirement_six"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementFour"
+            android:label="@string/title_activity_requirement_four"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementThree"
+            android:label="@string/title_activity_requirement_three"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".RequirementSummary"
+            android:label="@string/title_activity_requirement_summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".SellerProfile"
+            android:label="@string/title_activity_seller_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".BuyerProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".CategoryTrainerTutor"
+            android:label="@string/title_activity_category_trainer_tutor"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SubCategory"
+            android:label="@string/title_activity_sub_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".UserSetting"
+            android:label="@string/title_activity_user_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+        <activity
+            android:name=".ManageCategory"
+            android:label="@string/title_activity_manage_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".PrivacySetting"
+            android:label="@string/title_activity_privacy_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".UploadPhoto"
+            android:label="@string/title_activity_upload_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".AddServicesOne"
+            android:label="@string/title_activity_add_services_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".AddServicesTwo"
+            android:label="@string/title_activity_add_services_two"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".AddServicesThree"
+            android:label="@string/title_activity_add_services_three"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".OTPBuyerActivity"
+            android:label="@string/title_activity_otpbuyer"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+        <!-- Notification Reciever -->
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.balram.syt" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMNotificationIntentService" />
+
+        <activity
+            android:name=".ContactBuyer"
+            android:label="@string/title_activity_contact_buyer"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+        <!-- Enable background dispatching to improve delivery on non-Google Play devices -->
+      <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Enable Google Play Store Campaign reports -->
+
+     <receiver
+        android:name="com.syt.balram.syt.InstallReferrerReceiver"
+        android:enabled="true"
+        android:exported="true" >
+        <intent-filter>
+            <action android:name="com.android.vending.INSTALL_REFERRER" />
+        </intent-filter>
+    </receiver>
+
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".UserFollowers"
+            android:label="@string/title_activity_user_followers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FollowerMessage"
+            android:label="@string/title_activity_follower_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".FollowerList"
+            android:label="@string/title_activity_follower_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".MyPosts"
+            android:label="@string/title_activity_my_posts"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SearchLeads"
+            android:label="@string/title_activity_search_leads"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+        <!--
+        <activity
+            android:name=".MyChat"
+            android:label="@string/title_activity_my_chat" >
+        </activity>
+        -->
+        <activity
+            android:name=".SignUpOverLay"
+            android:label="@string/title_activity_sign_up_over_lay"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SubCategoryActivity"
+            android:label="@string/title_activity_sub_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".SellerSubCategory"
+            android:label="@string/title_activity_seller_sub_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".HomeOops"
+            android:label="@string/title_activity_home_oops"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".FollowerGcmMessage"
+            android:label="@string/title_activity_follower_gcm_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".AddServicesSubCategory"
+            android:label="@string/title_activity_add_services_sub_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".AdminMessage"
+            android:label="@string/title_activity_admin_message" >
+        </activity>
+        <activity
+            android:name=".ServiceProvider"
+            android:label="@string/title_activity_service_provider"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".NotificationGeneralMessage"
+            android:label="@string/title_activity_notification_general_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+        <activity
+            android:name=".WebView"
+            android:label="@string/title_activity_web_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/applicationTheme" >
+        </activity>
+
+        <service
+            android:name=".RevieverService"
+            android:enabled="true" />
+
+        <!--<activity
+            android:name=".MyChat"
+            android:label="@string/title_activity_my_chat" >
+        </activity>-->
+    </application>
+
+</manifest>

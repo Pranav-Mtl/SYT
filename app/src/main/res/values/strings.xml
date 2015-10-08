@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Sell Your Time</string>
+    <string name="landing_text_one">India\'s largest services marketplace.</string>
+    <string name="landing_text_two">Sell your Skills, Knowledge, Experience.</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register_screen">RegisterScreen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="title_section1">Categories</string>
+    <string name="title_section2">Post Requirement</string>
+    <string name="title_section3">Latest Sellers</string>
+    <string name="title_section4">Latest Leads</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_how_it_work">HowItWork</string>
+    <string name="title_activity_buyer_question_first">BuyerQuestionFirst</string>
+    <string name="title_activity_buyer_question_second">BuyerQuestionSecond</string>
+
+    <string name="app_id">674786329314599</string>
+    <string name="Affle_TRACKER_URL">http://affle.co/1370851877/sellyourtime/sellyourtimeandroid/dl_android.php?ad2cid=143314849</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_requirement_one">RequirementOne</string>
+    <string name="title_activity_requirement_two">RequirementTwo</string>
+    <string name="title_activity_search">Search</string>
+
+    <color name="example_color">#074286</color>
+    <color name="sytcolor">#074286</color>
+    <color name="sytcolordark">#053060</color>
+    <color name="WhiteColor">#ffffff</color>
+    <color name="GrayColor">#f5f5f5</color>
+
+    <color name="sytcolortext">#074286</color>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_seller_question_one">SellerQuestionOne</string>
+    <string name="title_activity_seller_question_expandable">SellerQuestionExpandable</string>
+    <string name="title_activity_seller_question_three">SellerQuestionThree</string>
+    <string name="title_activity_seller_question_four">SellerQuestionFour</string>
+    <string name="title_activity_seller_question_five">SellerQuestionFive</string>
+    <string name="title_activity_otp">OTPActivity</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_new_password">NewPassword</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_json_parse_sample">JsonParseSample</string>
+    <string name="title_activity_requirement_five">RequirementFive</string>
+    <string name="title_activity_requirement_six">RequirementSix</string>
+    <string name="title_activity_requirement_four">RequirementFour</string>
+    <string name="title_activity_requirement_three">RequirementThree</string>
+    <string name="title_activity_forgot_password_bl">ForgotPasswordBL</string>
+    <string name="title_activity_requirement_summary">RequirementSummary</string>
+    <string name="title_activity_seller_profile">SellerProfile</string>
+    <string name="title_activity_buyer_profile">BuyerProfile</string>
+    <string name="title_activity_category_trainer_tutor">CategoryTrainerTutor</string>
+    <string name="title_activity_sub_category">SubCategory</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_user_setting">UserSetting</string>
+    <string name="title_activity_manage_category">ManageCategory</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_privacy_setting">PrivacySetting</string>
+    <string name="title_activity_upload_photo">UploadPhoto</string>
+    <string name="title_activity_add_services_one">AddServicesOne</string>
+    <string name="title_activity_add_services_two">AddServicesTwo</string>
+    <string name="title_activity_add_services_three">AddServicesThree</string>
+    <string name="title_activity_otpbuyer">OTPBuyerActivity</string>
+    <string name="title_activity_contact_buyer">ContactBuyer</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_user_followers">UserFollowers</string>
+    <string name="title_activity_follower_message">FollowerMessage</string>
+    <string name="title_activity_interest_register">InterestRegister</string>
+    <string name="title_activity_follower_list">FollowerList</string>
+    <string name="title_activity_my_posts">MyPosts</string>
+    <string name="title_activity_search_leads">SearchLeads</string>
+    <string name="title_activity_my_chat">MyChat</string>
+    <string name="title_activity_sign_up_over_lay">SignUpOverLay</string>
+    <string name="title_activity_ratind_bar">RatindBarActivity</string>
+    <string name="title_activity_rating_bar">RatingBarActivity</string>
+    <string name="title_activity_seller_sub_category">SellerSubCategory</string>
+    <string name="title_activity_deactivate_account">DeactivateAccount</string>
+    <string name="title_activity_home_oops">HomeOops</string>
+    <string name="title_activity_follower_gcm_message">FollowerGcmMessage</string>
+    <string name="title_activity_add_services_sub_category">AddServicesSubCategory</string>
+    <string name="title_activity_admin_message">AdminMessage</string>
+    <string name="title_activity_service_provider">ServiceProvider</string>
+    <string name="title_activity_notification_general_message">NotificationGeneralMessage</string>
+    <string name="title_activity_web_view">WebView</string>
+
+</resources>
